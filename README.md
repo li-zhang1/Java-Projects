@@ -1,2 +1,2 @@
 # Java-Projects
-Program I wrote to polish my java programming skill.
+Programs I wrote to polish my java programming skill.
