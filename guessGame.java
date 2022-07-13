@@ -22,10 +22,11 @@ public class guessGame {
         int randomNumber = random.nextInt(20) + 1;
         int count = 0;
         while (count < 5) {
+            count++;
             System.out.println("Please guess number between 0 and 20");
             int guess = scanner.nextInt();
             if (guess == randomNumber) {
-                System.out.println("You Win!");
+                System.out.println("Congratuations! You Win! You've tried " + count + " times");
                 System.exit(0);
             } else if (guess > randomNumber) {
                 System.out.println("Guess lower");
@@ -33,9 +34,9 @@ public class guessGame {
             } else {
                 System.out.println("Guess higher");
             }
-            count++;
         }
-        System.out.println("You Loss");
+        System.out.println("You Loss!");
+        System.out.println("The number was " + randomNumber);
 
     }
         }
